@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antony Solórzano — Portafolio</title>
+  <meta name="description" content="Portafolio de Antony Solórzano: desarrollo de software, automatización, IA y web apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0D0D0D;           /* negro carbón */
+      --text:#F5F5F5;         /* blanco humo */
+      --muted:#BDBDBD;        /* gris suave para secundarios */
+      --gold:#D4AF37;         /* dorado metálico */
+      --card:#121212;         /* fondo de tarjetas */
+      --border:#1f1f1f;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{background:var(--bg);color:var(--text);margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji';}
+    a{color:var(--gold);text-decoration:none}
+    a:hover{opacity:.9}
+    img{max-width:100%;display:block}
+    /* NAV */
+    header{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav{max-width:var(--maxw);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{font-family:Poppins, sans-serif;font-weight:700;letter-spacing:.5px}
+    .brand span{color:var(--gold)}
+    nav a{margin-left:18px;color:var(--text)}
+    nav a.btn{padding:10px 14px;border:1px solid var(--gold);border-radius:10px;color:var(--gold)}
+    /* HERO */
+    .hero{max-width:var(--maxw);margin:40px auto;padding:40px 20px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .kicker{color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+    .title{font-family:Poppins, sans-serif;font-size:42px;line-height:1.15;margin:10px 0 14px}
+    .subtitle{color:var(--muted);font-size:18px;line-height:1.6}
+    .cta{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:#151515;color:var(--text)}
+    .btn.gold{background:var(--gold);color:#0a0a0a;border-color:var(--gold);font-weight:700}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    .avatar{aspect-ratio:1/1;border-radius:16px;border:1px solid var(--border);}
+    /* SECTIONS */
+    section{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .section-title{font-family:Poppins, sans-serif;font-size:28px;margin:40px 0 8px}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid.cols-3{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+      .title{font-size:34px}
+    }
+    .chip{display:inline-flex;align-items:center;padding:8px 10px;border:1px solid var(--border);border-radius:999px;margin:6px 8px 0 0;font-size:14px;color:var(--muted)}
+    .project h3{margin:.2rem 0}
+    .project p{color:var(--muted)}
+    footer{border-top:1px solid var(--border);margin-top:40px}
+    .foot{max-width:var(--maxw);margin:auto;padding:30px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted)}
+    .badge{font-size:12px;color:#0a0a0a;background:var(--gold);padding:6px 10px;border-radius:999px;font-weight:700}
+    /* smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Antony <span>Solórzano</span></div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a class="btn" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div>
+      <div class="kicker">Desarrollador · Analista de Sistemas</div>
+      <h1 class="title">Desarrollo software con propósito.</h1>
+      <p class="subtitle">Conecto la tecnología, la automatización y la inteligencia artificial para simplificar lo complejo y transformar ideas en experiencias útiles.</p>
+      <div class="cta">
+        <a class="btn gold" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Escríbeme</a>
+      </div>
+      <div style="margin-top:18px;">
+        <span class="chip">Python</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Laravel</span>
+        <span class="chip">Docker</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Automatización</span>
+        <span class="chip">IA · Chatbots</span>
+      </div>
+    </div>
+    <div class="card">
+      <!-- Sustituye la imagen por tu foto profesional: /assets/images/antony.jpg -->
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=460&v=4" alt="Foto/Avatar temporal de Antony">
+      <div style="margin-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <span class="badge">Disponible para colaborar</span>
+        <a href="#contacto">Contacto →</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="proyectos">
+    <h2 class="section-title">Proyectos destacados</h2>
+    <div class="grid cols-3">
+      <article class="card project">
+        <h3>Gestor de Inventario Web</h3>
+        <p>Aplicación para control de stock, proveedores y alertas de reposición.</p>
+        <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
+        <a href="#" target="_blank">Repositorio / Demo</a>
+      </article>
+      <article class="card project">
+        <h3>Chatbot de Atención</h3>
+        <p>Asistente con IA para responder FAQs y derivar tickets.</p>
+        <p><strong>Tecnologías:</strong> Python, FastAPI, RAG</p>
+        <a href="#" target="_blank">Repositorio / Demo</a>
+      </article>
+      <article class="card project">
+        <h3>Automatización ETL</h3>
+        <p>Pipeline de datos con orquestación y reportes automáticos.</p>
+        <p><strong>Tecnologías:</strong> Docker, Airflow, SQL</p>
+        <a href="#" target="_blank">Repositorio / Demo</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Lenguajes & Frameworks</h3>
+        <p class="subtitle">Python, JavaScript, PHP (Laravel), SQL, React, Node.js</p>
+      </div>
+      <div class="card">
+        <h3>Herramientas</h3>
+        <p class="subtitle">Git, Docker, VS Code, Postman, Linux</p>
+      </div>
+      <div class="card">
+        <h3>Especialidades</h3>
+        <p class="subtitle">Automatización & Integraciones, Web Apps, Frontend/UI, IA & Chatbots</p>
+      </div>
+      <div class="card">
+        <h3>Metodologías</h3>
+        <p class="subtitle">Agile/Scrum, buenas prácticas, testing y despliegues limpios</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="card">
+      <p>Soy Antony Solórzano, desarrollador y analista de sistemas. Creo en la disciplina, la mejora continua y el poder de la acción. El código es una herramienta; la mentalidad es lo que define el resultado.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <div class="card">
+      <p>¿Colaboramos? Escríbeme y conversemos tu idea.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:antony.solorzano.dev@example.com">antony.solorzano.dev@example.com</a><br/>
+        <strong>GitHub:</strong> <a href="https://github.com/antony012" target="_blank">github.com/antony012</a><br/>
+        <strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/antony</a> · 
+        <strong>Instagram:</strong> <a href="#" target="_blank">@antonysolorzano</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <span>© <span id="year"></span> Antony Solórzano — Desarrollo con propósito</span>
+      <span><a href="#inicio">Volver arriba ↑</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
